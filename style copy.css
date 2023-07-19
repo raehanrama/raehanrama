@@ -1,0 +1,673 @@
+/* Navbar */
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.logo i {
+  margin-right: 5px;
+}
+
+.logo-text {
+  font-weight: bold;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item i {
+  margin-right: 5px;
+}
+
+.menu-item span {
+  margin-left: 5px;
+}
+
+.menu-item a:hover {
+  background-color: #555;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  display: none;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  position: relative;
+}
+
+.dropdown-menu a {
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #555;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.fa-angle-down {
+  margin-left: 5px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.garis {
+  border: none;
+  border-top: 2px solid #333;
+  margin: 10px 0;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container p {
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu-item {
+    position: static;
+    margin-right: 10px;
+  }
+
+  .menu-item:last-child {
+    margin-right: 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    display: none;
+    background-color: transparent;
+  }
+
+  .dropdown-menu li {
+    padding-left: 0;
+  }
+
+  .dropdown-menu a {
+    padding: 5px;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  .menu-item:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* dt_guru.php */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form1 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.form1 a i {
+  margin-right: 5px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 250px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.submit {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (max-width: 768px) {
+  .submit {
+    width: 100%;
+  }
+}
+
+/* profil.php */
+.container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  flex: 1 1 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.box h3 {
+  margin-top: 0;
+}
+
+.info-list,
+.mission-list,
+.facility-list {
+  padding-left: 0;
+  margin-top: 10px;
+  list-style-position: inside;
+}
+
+.info-list li,
+.mission-list li,
+.facility-list li {
+  margin-bottom: 5px;
+}
+
+.garis {
+  border: none;
+  border-top: 2px solid #333;
+  margin: 10px 0;
+}
+
+/* kontak.php */
+.content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contact-details {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 300px;
+}
+
+.contact-details h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-details ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.contact-details ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.contact-details ul li i {
+  margin-right: 10px;
+}
+
+.map {
+  width: 400px;
+  height: 300px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map {
+    margin-top: 20px;
+  }
+}
+
+/* dt_guru.php */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content p {
+  text-align: center;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.tindakan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tindakan a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tindakan a i {
+  margin-right: 5px;
+}
+
+.tindakan a:hover {
+  background-color: #555;
+}
+
+/* dt_siswa.php */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content p {
+  text-align: center;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.tindakan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tindakan a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tindakan a i {
+  margin-right: 5px;
+}
+
+.tindakan a:hover {
+  background-color: #555;
+}
+
+@media (max-width: 760px) {
+  .content table {
+    overflow-x: auto;
+  }
+}
+/* tambah.php */
+.container-2d {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-2d .judul {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-2d .kembali a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container-2d .kembali a:hover {
+  text-decoration: underline;
+}
+
+.container-2d .form-3d {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.container-2d .form-3d h3 {
+  text-align: center;
+}
+
+.container-2d .form-3d div {
+  margin-bottom: 10px;
+}
+
+.container-2d .form-3d label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.container-2d .form-3d input[type="number"],
+.container-2d .form-3d input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.container-2d .form-3d input[type="file"] {
+  width: 100%;
+  padding: 10px;
+}
+
+.container-2d .form-3d input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container-2d .form-3d input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* login.php */
+.container-2ds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+/* Form Styles */
+.kotak {
+  width: 400px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.kotak h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-item {
+  margin-bottom: 20px;
+}
+
+.form-item label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-item input[type="text"],
+.form-item input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #555;
+}
+
+/* error */
+.error {
+  color: red;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.error i {
+  margin-right: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .kotak {
+    width: 80%;
+  }
+}
+
+/* edit.php // edit_s.php */
+.container-23d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.judul2-s {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-20s {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-20s div {
+  margin-bottom: 10px;
+}
+
+.form-20s label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-20s input[type="text"],
+.form-20s input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-20s input[type="file"] {
+  width: 100%;
+  padding: 10px;
+}
+
+.form-20s input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .form-20s {
+    width: 90%;
+  }
+}
